@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tKIkua840P5ZLfnMTGIkWwPzi7OLcJKp7zP0XxAB8oI=",
+  "Source": "EP.Payments.API",
+  "BasePath": "_content/EP.Payments.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ep-notifications-api
+  labels:
+    app: ep-notifications-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ep-notifications-api
+  template:
+    metadata:
+      labels:
+        app: ep-notifications-api
+    spec:
+      containers:
+        - name: ep-notifications-api
+          image: fagnerrs/ep-notifications-api
+          ports:
+            - containerPort: 80

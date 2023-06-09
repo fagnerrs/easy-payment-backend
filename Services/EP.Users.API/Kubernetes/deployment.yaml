@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ep-users-api
+  labels:
+    app: ep-users-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ep-users-api
+  template:
+    metadata:
+      labels:
+        app: ep-users-api
+    spec:
+      containers:
+        - name: ep-users-api
+          image: fagnerrs/ep-users-api
+          ports:
+            - containerPort: 80

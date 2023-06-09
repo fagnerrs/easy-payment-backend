@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/fagneroliveira/Projects/easy-payment-backend/SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj": {}
+  },
+  "projects": {
+    "/Users/fagneroliveira/Projects/easy-payment-backend/SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/fagneroliveira/Projects/easy-payment-backend/SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj",
+        "projectName": "EP.Shared.Domain",
+        "projectPath": "/Users/fagneroliveira/Projects/easy-payment-backend/SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj",
+        "packagesPath": "/Users/fagneroliveira/.nuget/packages/",
+        "outputPath": "/Users/fagneroliveira/Projects/easy-payment-backend/SharedLibraries/EP.Shared.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/fagneroliveira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

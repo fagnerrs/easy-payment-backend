@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "y4F0JkPvCKj7OEihfpNjx0eOV4+AV72E39z9AAO1gKvJJFAZuBNsNnpfthONuZLwOLXgtfr8v2qZ8Pa8segTuA==",
+  "success": true,
+  "projectFilePath": "/Users/fagneroliveira/Projects/easy-payment-backend/Services/EP.Notifications.API/EP.Notifications.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.configuration.binder/3.1.0/microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.0/microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.0/microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.http/3.1.0/microsoft.extensions.http.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.logging/3.1.0/microsoft.extensions.logging.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.0/microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.objectpool/7.0.0/microsoft.extensions.objectpool.7.0.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.options/3.1.0/microsoft.extensions.options.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.extensions.primitives/3.1.0/microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/prometheus-net/8.0.0/prometheus-net.8.0.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/prometheus-net.aspnetcore/8.0.0/prometheus-net.aspnetcore.8.0.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/prometheus-net.netframework.aspnet/8.0.0/prometheus-net.netframework.aspnet.8.0.0.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'prometheus-net.NetFramework.AspNet 8.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "prometheus-net.NetFramework.AspNet",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

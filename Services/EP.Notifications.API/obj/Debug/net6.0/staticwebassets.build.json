@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZJum3iD4rkR21Wm6esdakskDUpksVuChwvGNfcPi5QQ=",
+  "Source": "EP.Notifications.API",
+  "BasePath": "_content/EP.Notifications.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
