@@ -4,11 +4,16 @@
 
 replicaCount: 1
 
+namespace: default
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
+  
+container:
+  image: fagnerrs/ep-users-api
 
 imagePullSecrets: [ ]
 nameOverride: ""
@@ -33,7 +38,7 @@ livenessProbbe:
 service:
   type: NodePort
   port: 8001
-  nodePort: 30010
+  nodePort: 30050
   targetPort: 80
 
 ingress:
