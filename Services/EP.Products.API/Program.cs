@@ -2,6 +2,7 @@ using EP.Products.Domain.Services;
 using EP.Products.Domain.Services.Interfaces;
 using EP.Products.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,5 +31,14 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// prometheus
+app.UseRouting();
+app.UseHttpMetrics();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapMetrics();
+});
+
 
 app.Run();

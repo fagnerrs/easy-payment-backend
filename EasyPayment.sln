@@ -46,6 +46,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4BAC4B4C-0B79-4912-BC13-E287CE70031C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ep-products", "ep-products", "{26663198-99CB-4F1D-B4D9-1BF5525F2C7C}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\helmcharts\charts\ep-products\Chart.yaml = DevOps\helmcharts\charts\ep-products\Chart.yaml
+		DevOps\helmcharts\charts\ep-products\values.yaml = DevOps\helmcharts\charts\ep-products\values.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ep-users", "ep-users", "{D5119C42-1D5F-4B2C-B3B6-CAC8D265B88F}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\helmcharts\charts\ep-users\Chart.yaml = DevOps\helmcharts\charts\ep-users\Chart.yaml
+		DevOps\helmcharts\charts\ep-users\values.yaml = DevOps\helmcharts\charts\ep-users\values.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{9E52F6D2-59BF-41B3-96FE-FCCF8E3A7AA0}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\helmcharts\charts\ep-products\templates\_helpers.tpl = DevOps\helmcharts\charts\ep-products\templates\_helpers.tpl
+		DevOps\helmcharts\charts\ep-products\templates\deployment.yaml = DevOps\helmcharts\charts\ep-products\templates\deployment.yaml
+		DevOps\helmcharts\charts\ep-products\templates\hpa.yaml = DevOps\helmcharts\charts\ep-products\templates\hpa.yaml
+		DevOps\helmcharts\charts\ep-products\templates\service.yaml = DevOps\helmcharts\charts\ep-products\templates\service.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{7A449EF3-1047-4EE8-A867-5AF1E702ACFB}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\helmcharts\charts\ep-users\templates\_helpers.tpl = DevOps\helmcharts\charts\ep-users\templates\_helpers.tpl
+		DevOps\helmcharts\charts\ep-users\templates\deployment.yaml = DevOps\helmcharts\charts\ep-users\templates\deployment.yaml
+		DevOps\helmcharts\charts\ep-users\templates\hpa.yaml = DevOps\helmcharts\charts\ep-users\templates\hpa.yaml
+		DevOps\helmcharts\charts\ep-users\templates\service.yaml = DevOps\helmcharts\charts\ep-users\templates\service.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "Services\WebApplication1\WebApplication1.csproj", "{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +130,10 @@ Global
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5816C981-BC3C-4414-9277-1E3AE6E5FC56} = {46C759BE-1E2A-491B-AFDA-807D8258B1B4}
@@ -120,5 +154,10 @@ Global
 		{BC98918B-6855-4491-9597-8C01DE2A974F} = {4BAC4B4C-0B79-4912-BC13-E287CE70031C}
 		{46C759BE-1E2A-491B-AFDA-807D8258B1B4} = {4BAC4B4C-0B79-4912-BC13-E287CE70031C}
 		{70385320-543C-492A-85E8-91F49F997765} = {4BAC4B4C-0B79-4912-BC13-E287CE70031C}
+		{26663198-99CB-4F1D-B4D9-1BF5525F2C7C} = {B0800845-71D8-4475-B604-44E71C97C668}
+		{D5119C42-1D5F-4B2C-B3B6-CAC8D265B88F} = {B0800845-71D8-4475-B604-44E71C97C668}
+		{9E52F6D2-59BF-41B3-96FE-FCCF8E3A7AA0} = {26663198-99CB-4F1D-B4D9-1BF5525F2C7C}
+		{7A449EF3-1047-4EE8-A867-5AF1E702ACFB} = {D5119C42-1D5F-4B2C-B3B6-CAC8D265B88F}
+		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6} = {BC98918B-6855-4491-9597-8C01DE2A974F}
 	EndGlobalSection
 EndGlobal
