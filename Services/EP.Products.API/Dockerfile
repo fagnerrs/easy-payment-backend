@@ -5,10 +5,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["EP.Products.API/EP.Products.API.csproj", "EP.Products.API/"]
-RUN dotnet restore "EP.Products.API/EP.Products.API.csproj"
+COPY ["Services/EP.Products.API/EP.Products.API.csproj", "Services/EP.Products.API/"]
+COPY ["SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj", "SharedLibraries/EP.Shared.Domain/"]
+RUN dotnet restore "Services/EP.Products.API/EP.Products.API.csproj"
 COPY . .
-WORKDIR "/src/EP.Products.API"
+WORKDIR "/src/Services/EP.Products.API"
 RUN dotnet build "EP.Products.API.csproj" -c Release -o /app/build
 
 FROM build AS publish

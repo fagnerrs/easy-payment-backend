@@ -55,10 +55,6 @@
             "prometheus-net.AspNetCore": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "prometheus-net.NetFramework.AspNet": {
-              "target": "Package",
-              "version": "[8.0.0, )"
             }
           },
           "imports": [

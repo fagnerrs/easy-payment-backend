@@ -27,7 +27,7 @@ public class ProductController : ControllerBase
         await rifaService.Add(rifa);
     }
     
-    [HttpPost]
+    [HttpPost("order")]
     public async Task RifaOrder([FromBody] RifaOrder rifaOrder)
     {
         await rifaService.Order(rifaOrder);

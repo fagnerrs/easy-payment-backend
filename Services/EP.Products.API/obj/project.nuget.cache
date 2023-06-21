@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "co0jKB2GfX2KWRiEzFY4LgExSFP0suYSFYerr8wI5H3p2qoF/tNquGTW7LmzUhwSIyCydC5RlncWxbMtITYvug==",
+  "dgSpecHash": "nf8Xk4crKCQ2eYPO6WL8JXgKxdWNhnOKYMTFw5xedpBTlAf9rJQv8LZJN42k2xxL7EfW38yrv+k9IHnyEufLwQ==",
   "success": true,
   "projectFilePath": "/Users/fagneroliveira/Projects/easy-payment-backend/Services/EP.Products.API/EP.Products.API.csproj",
   "expectedPackageFiles": [
@@ -22,23 +22,11 @@
     "/Users/fagneroliveira/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/prometheus-net/8.0.0/prometheus-net.8.0.0.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/prometheus-net.aspnetcore/8.0.0/prometheus-net.aspnetcore.8.0.0.nupkg.sha512",
-    "/Users/fagneroliveira/.nuget/packages/prometheus-net.netframework.aspnet/8.0.0/prometheus-net.netframework.aspnet.8.0.0.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "/Users/fagneroliveira/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'prometheus-net.NetFramework.AspNet 8.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "prometheus-net.NetFramework.AspNet",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

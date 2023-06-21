@@ -5,6 +5,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Notifications.API", "Services\EP.Notifications.API\EP.Notifications.API.csproj", "{70385320-543C-492A-85E8-91F49F997765}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOps", "DevOps", "{EF8B627F-34D4-4659-94AB-E92793E81F17}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\sample-hpa.yaml = DevOps\sample-hpa.yaml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{46C759BE-1E2A-491B-AFDA-807D8258B1B4}"
 EndProject
@@ -15,8 +18,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{BC98918B-6855-4491-9597-8C01DE2A974F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{BD52BDBA-026D-4EA9-B6B3-93A84B348864}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Products.API", "Services\EP.Products.API\EP.Products.API.csproj", "{2791E393-575B-4611-9723-D9FFB6F265F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Products.Domain", "Services\EP.Products.Domain\EP.Products.Domain.csproj", "{581C9D9E-90F4-4110-B6F9-1C2FBB39C885}"
 EndProject
@@ -74,7 +75,63 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 		DevOps\helmcharts\charts\ep-users\templates\service.yaml = DevOps\helmcharts\charts\ep-users\templates\service.yaml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "Services\WebApplication1\WebApplication1.csproj", "{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Products.API", "Services\EP.Products.API\EP.Products.API.csproj", "{E26368A0-2573-4193-941D-241DE14BF037}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cluster", "cluster", "{F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "alert-manager", "alert-manager", "{38AFFB2E-9E1A-42E8-84BB-C5CD84E8E6BF}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\alert-manager\AlertManagerConfigmap.yaml = DevOps\cluster\alert-manager\AlertManagerConfigmap.yaml
+		DevOps\cluster\alert-manager\AlertManagerTemplate.yaml = DevOps\cluster\alert-manager\AlertManagerTemplate.yaml
+		DevOps\cluster\alert-manager\Deployment.yaml = DevOps\cluster\alert-manager\Deployment.yaml
+		DevOps\cluster\alert-manager\Service.yaml = DevOps\cluster\alert-manager\Service.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prometheus", "prometheus", "{842C86A6-0430-4BF4-935E-67F9FC50D56A}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\prometheus\clusterRole.yaml = DevOps\cluster\prometheus\clusterRole.yaml
+		DevOps\cluster\prometheus\clusterRole.yml = DevOps\cluster\prometheus\clusterRole.yml
+		DevOps\cluster\prometheus\config-map.yaml = DevOps\cluster\prometheus\config-map.yaml
+		DevOps\cluster\prometheus\prometheus-deployment.yaml = DevOps\cluster\prometheus\prometheus-deployment.yaml
+		DevOps\cluster\prometheus\prometheus-service.yaml = DevOps\cluster\prometheus\prometheus-service.yaml
+		DevOps\cluster\prometheus\service-account.yaml = DevOps\cluster\prometheus\service-account.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grafana", "grafana", "{BDE8B883-7DDF-42AA-BF5D-4845DF3E7795}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\grafana\apiVersion: v1.yml = DevOps\cluster\grafana\apiVersion: v1.yml
+		DevOps\cluster\grafana\dashboard-kubernetes-monitoring_rev1.json = DevOps\cluster\grafana\dashboard-kubernetes-monitoring_rev1.json
+		DevOps\cluster\grafana\grafana-datasource-config.yaml = DevOps\cluster\grafana\grafana-datasource-config.yaml
+		DevOps\cluster\grafana\grafana-deployment.yaml = DevOps\cluster\grafana\grafana-deployment.yaml
+		DevOps\cluster\grafana\grafana-service.yaml = DevOps\cluster\grafana\grafana-service.yaml
+		DevOps\cluster\grafana\http-request_rev1.json = DevOps\cluster\grafana\http-request_rev1.json
+		DevOps\cluster\grafana\kubernetes-monitoring_rev1.json = DevOps\cluster\grafana\kubernetes-monitoring_rev1.json
+		DevOps\cluster\grafana\prometheus-net-process-metrics_rev3.json = DevOps\cluster\grafana\prometheus-net-process-metrics_rev3.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cAdvisor", "cAdvisor", "{40FE679A-E68D-4781-A08A-DF19641A6A53}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\cAdvisor\cAdvisor-compose.yaml = DevOps\cluster\cAdvisor\cAdvisor-compose.yaml
+		DevOps\cluster\cAdvisor\daemonset.yaml = DevOps\cluster\cAdvisor\daemonset.yaml
+		DevOps\cluster\cAdvisor\kustomization.yaml = DevOps\cluster\cAdvisor\kustomization.yaml
+		DevOps\cluster\cAdvisor\namespace.yaml = DevOps\cluster\cAdvisor\namespace.yaml
+		DevOps\cluster\cAdvisor\serviceaccount.yaml = DevOps\cluster\cAdvisor\serviceaccount.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kube-state-metrics", "kube-state-metrics", "{332F9C8F-3F06-41BC-8F84-3E95E027381F}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\kube-state-metrics\cluster-role-binding.yaml = DevOps\cluster\kube-state-metrics\cluster-role-binding.yaml
+		DevOps\cluster\kube-state-metrics\cluster-role.yaml = DevOps\cluster\kube-state-metrics\cluster-role.yaml
+		DevOps\cluster\kube-state-metrics\deployment.yaml = DevOps\cluster\kube-state-metrics\deployment.yaml
+		DevOps\cluster\kube-state-metrics\service-account.yaml = DevOps\cluster\kube-state-metrics\service-account.yaml
+		DevOps\cluster\kube-state-metrics\service.yaml = DevOps\cluster\kube-state-metrics\service.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql", "mysql", "{ECACD2C7-4A99-4987-A890-115FADCAC688}"
+	ProjectSection(SolutionItems) = preProject
+		DevOps\cluster\mysql\mysql-secret.yaml = DevOps\cluster\mysql\mysql-secret.yaml
+		DevOps\cluster\mysql\mysql-storage.yaml = DevOps\cluster\mysql\mysql-storage.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,10 +155,6 @@ Global
 		{011B9593-A0A8-4A92-9B31-656A4A39763F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{011B9593-A0A8-4A92-9B31-656A4A39763F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{011B9593-A0A8-4A92-9B31-656A4A39763F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2791E393-575B-4611-9723-D9FFB6F265F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2791E393-575B-4611-9723-D9FFB6F265F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2791E393-575B-4611-9723-D9FFB6F265F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2791E393-575B-4611-9723-D9FFB6F265F0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{581C9D9E-90F4-4110-B6F9-1C2FBB39C885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{581C9D9E-90F4-4110-B6F9-1C2FBB39C885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581C9D9E-90F4-4110-B6F9-1C2FBB39C885}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -130,16 +183,15 @@ Global
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9C31D9-0D8B-4DB1-A890-828A4813639E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26368A0-2573-4193-941D-241DE14BF037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26368A0-2573-4193-941D-241DE14BF037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26368A0-2573-4193-941D-241DE14BF037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26368A0-2573-4193-941D-241DE14BF037}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5816C981-BC3C-4414-9277-1E3AE6E5FC56} = {46C759BE-1E2A-491B-AFDA-807D8258B1B4}
 		{A13638B3-5811-437B-92D2-AF0FF58E7FC5} = {46C759BE-1E2A-491B-AFDA-807D8258B1B4}
 		{011B9593-A0A8-4A92-9B31-656A4A39763F} = {46C759BE-1E2A-491B-AFDA-807D8258B1B4}
-		{2791E393-575B-4611-9723-D9FFB6F265F0} = {BC98918B-6855-4491-9597-8C01DE2A974F}
 		{581C9D9E-90F4-4110-B6F9-1C2FBB39C885} = {BC98918B-6855-4491-9597-8C01DE2A974F}
 		{0AC13A63-B200-427D-9DF0-35B4177D743A} = {BC98918B-6855-4491-9597-8C01DE2A974F}
 		{E67D0EA3-F999-4CC1-9E56-367E011D3A9F} = {BD52BDBA-026D-4EA9-B6B3-93A84B348864}
@@ -158,6 +210,13 @@ Global
 		{D5119C42-1D5F-4B2C-B3B6-CAC8D265B88F} = {B0800845-71D8-4475-B604-44E71C97C668}
 		{9E52F6D2-59BF-41B3-96FE-FCCF8E3A7AA0} = {26663198-99CB-4F1D-B4D9-1BF5525F2C7C}
 		{7A449EF3-1047-4EE8-A867-5AF1E702ACFB} = {D5119C42-1D5F-4B2C-B3B6-CAC8D265B88F}
-		{ACAE9FFE-8612-4BA8-A51E-03BA282F5AD6} = {BC98918B-6855-4491-9597-8C01DE2A974F}
+		{E26368A0-2573-4193-941D-241DE14BF037} = {BC98918B-6855-4491-9597-8C01DE2A974F}
+		{F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D} = {EF8B627F-34D4-4659-94AB-E92793E81F17}
+		{38AFFB2E-9E1A-42E8-84BB-C5CD84E8E6BF} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
+		{842C86A6-0430-4BF4-935E-67F9FC50D56A} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
+		{BDE8B883-7DDF-42AA-BF5D-4845DF3E7795} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
+		{40FE679A-E68D-4781-A08A-DF19641A6A53} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
+		{332F9C8F-3F06-41BC-8F84-3E95E027381F} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
+		{ECACD2C7-4A99-4987-A890-115FADCAC688} = {F21FC9AC-EC2C-4C44-BA0B-62B88AD6856D}
 	EndGlobalSection
 EndGlobal

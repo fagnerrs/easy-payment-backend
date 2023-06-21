@@ -244,15 +244,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "prometheus-net.NetFramework.AspNet/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net462/Prometheus.NetFramework.AspNet.dll": {}
-        },
-        "runtime": {
-          "lib/net462/Prometheus.NetFramework.AspNet.dll": {}
-        }
-      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -811,21 +802,6 @@
         "prometheus-net.aspnetcore.nuspec"
       ]
     },
-    "prometheus-net.NetFramework.AspNet/8.0.0": {
-      "sha512": "2HTHMJe5H12vzqMTBwpMhQnEUCVG6wnxUHWRlb3XaR/zZc4dBoqCKrBGR37Qrw1X0v0+7Q+kiFxoDr5pPyaTkw==",
-      "type": "package",
-      "path": "prometheus-net.netframework.aspnet/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/Prometheus.NetFramework.AspNet.dll",
-        "lib/net462/Prometheus.NetFramework.AspNet.xml",
-        "prometheus-net-logo.png",
-        "prometheus-net.netframework.aspnet.8.0.0.nupkg.sha512",
-        "prometheus-net.netframework.aspnet.nuspec"
-      ]
-    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -958,8 +934,7 @@
       "EP.Products.Domain >= 1.0.0",
       "EP.Products.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "prometheus-net.AspNetCore >= 8.0.0",
-      "prometheus-net.NetFramework.AspNet >= 8.0.0"
+      "prometheus-net.AspNetCore >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -1017,10 +992,6 @@
           "prometheus-net.AspNetCore": {
             "target": "Package",
             "version": "[8.0.0, )"
-          },
-          "prometheus-net.NetFramework.AspNet": {
-            "target": "Package",
-            "version": "[8.0.0, )"
           }
         },
         "imports": [
@@ -1045,17 +1016,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'prometheus-net.NetFramework.AspNet 8.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "prometheus-net.NetFramework.AspNet",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
