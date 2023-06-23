@@ -1,8 +1,7 @@
-using EP.Shared.Domain.EntityFramework;
-using EP.Shared.Infrastructure.EntityFramework;
-using EP.User.Domain.Services;
-using EP.User.Domain.Services.Interfaces;
-using EP.User.Infrastructure.Database;
+using EP.Users.Domain.Services;
+using EP.Users.Domain.Services.Interfaces;
+using EP.Users.Infrastructure;
+using EP.Users.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Prometheus;
 
@@ -16,9 +15,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 
-builder.Services.AddDbContext<UserContext>(opt => opt.UseInMemoryDatabase("user"));
-builder.Services.AddScoped<IOrganizerService, OrganizerService>();
+builder.Services.AddDbContext<UserContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-users;user=root;password=test1234"));
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserUnitOfWork, UserUnitOfWork>();
+builder.Services.AddTransient<DbInitializer>();
 
 var app = builder.Build();
 
@@ -39,5 +39,12 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapMetrics();
 });
+
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+var initialiser = services.GetRequiredService<DbInitializer>();
+initialiser.Run();
 
 app.Run();

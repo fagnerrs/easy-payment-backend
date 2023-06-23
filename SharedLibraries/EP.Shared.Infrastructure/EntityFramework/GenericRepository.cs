@@ -54,5 +54,12 @@ public class GenericRepository<TContext, TEntity> : IGenericRepository<TEntity>
             dbSet.Attach(entityToDelete);
             dbSet.Remove(entityToDelete);
         }
+        
+        public async Task Remove(long id)
+        {
+            var entityToDelete = await GetByIdAsync(id);
+            dbSet.Attach(entityToDelete);
+            dbSet.Remove(entityToDelete);
+        }
     }
     

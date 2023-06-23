@@ -14,8 +14,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\EP.User.Domain\EP.User.Domain.csproj" />
-      <ProjectReference Include="..\EP.User.Infrastructure\EP.User.Infrastructure.csproj" />
+      <ProjectReference Include="..\EP.Users.Domain\EP.Users.Domain.csproj" />
+      <ProjectReference Include="..\EP.Users.Infrastructure\EP.Users.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\Dtos" />
     </ItemGroup>
 
 </Project>

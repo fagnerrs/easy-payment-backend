@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOps", "DevOps", "{EF8B62
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{46C759BE-1E2A-491B-AFDA-807D8258B1B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.User.Domain", "Services\EP.User.Domain\EP.User.Domain.csproj", "{A13638B3-5811-437B-92D2-AF0FF58E7FC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Users.Domain", "Services\EP.Users.Domain\EP.Users.Domain.csproj", "{A13638B3-5811-437B-92D2-AF0FF58E7FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.User.Infrastructure", "Services\EP.User.Infrastructure\EP.User.Infrastructure.csproj", "{011B9593-A0A8-4A92-9B31-656A4A39763F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.Users.Infrastructure", "Services\EP.Users.Infrastructure\EP.Users.Infrastructure.csproj", "{011B9593-A0A8-4A92-9B31-656A4A39763F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{BC98918B-6855-4491-9597-8C01DE2A974F}"
 EndProject
@@ -131,6 +131,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql", "mysql", "{ECACD2C7
 	ProjectSection(SolutionItems) = preProject
 		DevOps\cluster\mysql\mysql-secret.yaml = DevOps\cluster\mysql\mysql-secret.yaml
 		DevOps\cluster\mysql\mysql-storage.yaml = DevOps\cluster\mysql\mysql-storage.yaml
+		DevOps\cluster\mysql\mysql-deployment.yaml = DevOps\cluster\mysql\mysql-deployment.yaml
 	EndProjectSection
 EndProject
 Global
