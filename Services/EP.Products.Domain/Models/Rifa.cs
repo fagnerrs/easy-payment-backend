@@ -7,8 +7,11 @@ public class Rifa
     public DateTime End { get; set; }
     public long NumberStart { get; set; }
     public long NumberEnd { get; set; }
-    public long OrganizerId { get; set; }
+    public long CreatedbyUserId { get; set; }
     public bool IsActive { get; set; } = true;
-    public List<long> AllowedSalesPeople { get; set; }
-    public bool IsPrivate { get; set; }
+    public List<RifaSalesPerson>? AllowedSalesPeople { get; set; }
+    public List<RifaSoldNumber>? SoldNumbers { get; set; }
+    public bool IsPublic { get; set; }
+    public decimal Price { get; set; }
+    public decimal SalesCommissionTax { get; set; } 
 }

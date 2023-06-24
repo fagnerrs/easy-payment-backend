@@ -7,4 +7,5 @@ public class Customer
     public string Email { get; set; }
     public string CNPJ { get; set; }
     public string CPF { get; set; }
+    public long Id { get; set; }
 }

@@ -6,7 +6,9 @@ public interface IRifaService
 {
     Task<long> Add(Rifa rifa);
     
-    Task<long> Order(RifaOrder rifa);
+    Task<long> Order(RifaOrder rifaOrder);
     
     Task Update(Rifa rifa);
+
+    List<Rifa> GetAvailableRifas(long salesPersonId);
 }

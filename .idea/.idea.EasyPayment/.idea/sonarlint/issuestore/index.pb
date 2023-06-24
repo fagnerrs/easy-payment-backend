@@ -47,20 +47,8 @@ QServices/EP.Products.Domain/obj/Debug/net6.0/EP.Products.Domain.GlobalUsings.g.
 OServices/EP.Products.Domain/obj/Debug/net6.0/EP.Products.Domain.AssemblyInfo.cs,7/f/7fff7616045fca8ed3fb5c59b14b17600db8b712
 ™
 iServices/EP.Products.Domain/obj/Debug/net6.0/EP.Products.Domain.GeneratedMSBuildEditorConfig.editorconfig,0/c/0cd717568a5891f786ac24e51acddbb6e7fe026f
-Z
-*Services/EP.Products.Domain/Models/Rifa.cs,1/b/1b6e8554bd870d02fb2d55b45583a0b092994d02
-_
-/Services/EP.Products.Domain/Models/RifaOrder.cs,8/7/873e765ef01f5fa0e71a3ede2a18bc6506c72010
-^
-.Services/EP.Products.Domain/Models/Customer.cs,4/b/4b73c7bfc5104cdee4ff644ac6085dde549c61de
-a
-1Services/EP.Products.Domain/Models/PaymentType.cs,9/4/9405342dec3f05dae7c014bb6aed898306d3f534
 u
 EServices/EP.Products.Domain/Services/Interfaces/IProductUnitOfWork.cs,b/5/b57658dc9eae9ff4346f66a88167ab740cb616fa
-c
-3Services/EP.Products.Domain/Services/RifaService.cs,8/e/8e795c4730f8a46bcbe3fe58513cda340beb8c96
-o
-?Services/EP.Products.Domain/Services/Interfaces/IRifaService.cs,3/5/35fd684591e8664d90c873f87ec05c26eefcbd70
 j
 :Services/EP.Notifications.API/appsettings.Development.json,9/2/92579d1da4df02eb8b8ce430ba092ed652436151
 [
@@ -107,8 +95,6 @@ yServices/EP.Products.Infrastructure/obj/Debug/net6.0/EP.Products.Infrastructure
 aServices/EP.Products.Infrastructure/obj/Debug/net6.0/EP.Products.Infrastructure.GlobalUsings.g.cs,e/e/eea525cf6db07fc543ae99a05bb57e536bb545e0
 r
 BServices/EP.Products.Infrastructure/Database/ProductsUnitOfWork.cs,0/2/0278c5f43680c139629b7a812f73c34cbd7be3d9
-o
-?Services/EP.Products.Infrastructure/Database/ProductsContext.cs,3/0/30e1f32d8b798ada53d2d96ae41a8296ee898045
 h
 8SharedLibraries/EP.Shared.Domain/EP.Shared.Domain.csproj,c/e/ce681cbbabe4b375b9f3be1a5f1046177ec258f0
 ‚
@@ -117,8 +103,6 @@ RSharedLibraries/EP.Shared.Domain/obj/Debug/net6.0/EP.Shared.Domain.AssemblyInfo
 lSharedLibraries/EP.Shared.Domain/obj/Debug/net6.0/EP.Shared.Domain.GeneratedMSBuildEditorConfig.editorconfig,0/e/0e9591506ee7060aa3784de6d2f714805077bfca
 „
 TSharedLibraries/EP.Shared.Domain/obj/Debug/net6.0/EP.Shared.Domain.GlobalUsings.g.cs,5/a/5a30875243202c020cc7aea08a2442e03b0e7b8d
-x
-HSharedLibraries/EP.Shared.Infrastructure/EP.Shared.Infrastructure.csproj,5/e/5edbd24b3ec93d2e18f991f86d59bd1e903f1128
 h
 8SharedLibraries/EP.Shared.Domain/Services/BaseService.cs,c/0/c02d084fb406c0dd4aea4456eb91eb6d66e7cb76
 ”
@@ -179,8 +163,6 @@ d
 4DevOps/helmcharts/charts/ep-users/templates/hpa.yaml,b/9/b928336403162edea73ae13777a2d905804a19be
 ]
 -DevOps/helmcharts/charts/ep-users/values.yaml,1/6/169b3e0baf21af265c97fb2106e188a6b8dbc720
-S
-#Services/EP.Products.API/Program.cs,2/9/295975eae8bd56d71407684edba24c37e0568c86
 k
 ;DevOps/cluster/kube-state-metrics/cluster-role-binding.yaml,6/e/6ef1f5ae4bce149b166e52780c0037702b8b03c0
 S
@@ -229,8 +211,6 @@ e
 +DevOps/cluster/grafana/grafana-service.yaml,8/e/8e162c9c9769f1f804b76d66a602a774eff1b216
 f
 6DevOps/cluster/alert-manager/AlertManagerTemplate.yaml,a/7/a73df1e0a9114aa717998c51ed5fe4271b0bb838
-i
-9Services/EP.Products.API/Controllers/ProductController.cs,2/b/2bf6e2069e0a2417eb29cb7d0cf894d96b9ca928
 g
 7DevOps/cluster/alert-manager/AlertManagerConfigmap.yaml,d/6/d64e0b59ff222a354034905a19cd7f88eec45180
 ^

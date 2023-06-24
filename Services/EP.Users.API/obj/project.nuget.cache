@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zOBOUamh6r7SAzE5msrKPGdoAVAScsijUj1Tby04Y5N/UeiuHEckNkkAgllJJLgBYTisIRaKubv8mMW04t+Qbw==",
+  "dgSpecHash": "HzOs5lt4mCWP6FstLYdCNZwRdKJMqP/hbklVAPH0i9nAcbZ1v4uk5kXezfROt8YGo6rff+yiW6F88fX+9hR9BA==",
   "success": true,
   "projectFilePath": "/Users/fagneroliveira/Projects/easy-payment-backend/Services/EP.Users.API/EP.Users.API.csproj",
   "expectedPackageFiles": [

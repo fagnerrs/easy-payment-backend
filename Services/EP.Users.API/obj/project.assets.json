@@ -791,7 +791,8 @@
         "dependencies": {
           "EP.Shared.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.5"
+          "Microsoft.EntityFrameworkCore.InMemory": "7.0.5",
+          "MySql.EntityFrameworkCore": "7.0.2"
         },
         "compile": {
           "bin/placeholder/EP.Shared.Infrastructure.dll": {}
@@ -818,8 +819,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "EP.Shared.Infrastructure": "1.0.0",
-          "EP.Users.Domain": "1.0.0",
-          "MySql.EntityFrameworkCore": "7.0.2"
+          "EP.Users.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/EP.Users.Infrastructure.dll": {}

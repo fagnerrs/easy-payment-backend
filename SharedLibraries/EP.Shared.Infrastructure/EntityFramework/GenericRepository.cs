@@ -49,6 +49,11 @@ public class GenericRepository<TContext, TEntity> : IGenericRepository<TEntity>
                 entry.State = EntityState.Modified;
         }
 
+        public async Task AddRange(List<TEntity> entities)
+        {
+            await dbSet.AddRangeAsync(entities);
+        }
+
         public void Remove(TEntity entityToDelete)
         {
             dbSet.Attach(entityToDelete);

@@ -1,3 +1,4 @@
+using EP.Shared.Infrastructure.EntityFramework;
 using EP.Users.Domain.Services;
 using EP.Users.Domain.Services.Interfaces;
 using EP.Users.Infrastructure;
@@ -18,7 +19,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddDbContext<UserContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-users;user=root;password=test1234"));
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserUnitOfWork, UserUnitOfWork>();
-builder.Services.AddTransient<DbInitializer>();
+builder.Services.AddTransient<DbInitializer<UserContext>>();
 
 var app = builder.Build();
 
@@ -41,10 +42,8 @@ app.UseEndpoints(endpoints =>
 });
 
 using var scope = app.Services.CreateScope();
-
 var services = scope.ServiceProvider;
-
-var initialiser = services.GetRequiredService<DbInitializer>();
-initialiser.Run();
+var databaseInitializer = services.GetRequiredService<DbInitializer<UserContext>>();
+databaseInitializer.Run();
 
 app.Run();
