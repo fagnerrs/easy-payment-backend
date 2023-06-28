@@ -16,7 +16,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 
-builder.Services.AddDbContext<UserContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-users;user=root;password=test1234"));
+#if DEBUG
+    builder.Services.AddDbContext<UserContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-users;user=root;password=test1234"));
+#else
+    builder.Services.AddDbContext<UserContext>(opt => opt.UseMySQL("server=mysql;database=ep-users;user=root;password=test1234"));
+#endif
+
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserUnitOfWork, UserUnitOfWork>();
 builder.Services.AddTransient<DbInitializer<UserContext>>();

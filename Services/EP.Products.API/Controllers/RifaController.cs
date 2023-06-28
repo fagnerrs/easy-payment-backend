@@ -6,11 +6,11 @@ namespace EP.Products.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ProductController : ControllerBase
+public class RifaController : ControllerBase
 {
     private readonly IRifaService rifaService;
 
-    public ProductController(IRifaService rifaService)
+    public RifaController(IRifaService rifaService)
     {
         this.rifaService = rifaService;
     }

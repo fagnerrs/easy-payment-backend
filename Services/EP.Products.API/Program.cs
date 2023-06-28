@@ -14,7 +14,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ProductsContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-products;user=root;password=test1234"));
+#if DEBUG
+    builder.Services.AddDbContext<ProductsContext>(opt => opt.UseMySQL("server=127.0.0.1;database=ep-products;user=root;password=test1234"));
+#else
+    builder.Services.AddDbContext<ProductsContext>(opt => opt.UseMySQL("server=mysql;database=ep-products;user=root;password=test1234"));
+#endif
+
+builder.Services.AddDbContext<ProductsContext>(opt => opt.UseMySQL("server=mysql;database=ep-products;user=root;password=test1234"));
 builder.Services.AddScoped<IRifaService, RifaService>();
 builder.Services.AddScoped<IProductUnitOfWork, ProductsUnitOfWork>();
 builder.Services.AddTransient<DbInitializer<ProductsContext>>();
@@ -38,10 +44,17 @@ app.UseEndpoints(endpoints =>
     endpoints.MapMetrics();
 });
 
-using var scope = app.Services.CreateScope();
-var services = scope.ServiceProvider;
-var databaseInitializer = services.GetRequiredService<DbInitializer<ProductsContext>>();
-databaseInitializer.Run();
-
+try
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var databaseInitializer = services.GetRequiredService<DbInitializer<ProductsContext>>();
+    databaseInitializer.Run();
+}
+catch (Exception e)
+{
+    Console.WriteLine(e);
+    throw;
+}
 
 app.Run();
