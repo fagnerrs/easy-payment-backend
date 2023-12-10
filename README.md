@@ -20,8 +20,10 @@ Este projeto é resultado do trabalho de conclusão da pós graduação em Arqui
 
 <h3 align="left"> Solução </h3>
 
-- Os microserviços foram desenvolvido utilizando Asp.Net Core, seguindo as melhores práticas de design como arquitetura hexagonal.
+- Os microserviços foram desenvolvido utilizando Asp.Net Core, seguindo as melhores práticas de design como arquitetura hexagonal
 - O deployment dos microserviços foi automatizado utilizando a ferramenta Helm
-- Foi implementada a ferramenta Prometheus e a geração de eventos customizado nos microserviços.
-- Foi implementada a ferramenta Alert Manager que gera eventos a partir das métricas do Prometheus.
-- Foi implementada a ferramenta Grafana para visualização de métricas 
+- Foi implementado a função de horizontal pod autoscaling do kubernetes
+- Foi implementada a ferramenta Prometheus e a geração de eventos customizados nos microserviços
+- Foi implementada a ferramenta Alert Manager que gera eventos a partir das métricas do Prometheus
+- Foi implementada a ferramenta Grafana para visualização de métricas
+- Foi utilizada a ferramenta jMeter para teste de performance dos microserviços
