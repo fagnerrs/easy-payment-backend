@@ -27,3 +27,5 @@ Este projeto é resultado do trabalho de conclusão da pós graduação em Arqui
 - Foi implementada a ferramenta Alert Manager que gera eventos a partir das métricas do Prometheus
 - Foi implementada a ferramenta Grafana para visualização de métricas
 - Foi utilizada a ferramenta jMeter para teste de performance dos microserviços
+
+<a href="https://drive.google.com/file/d/1plt3d7scslIfZeLujnIPw0CcJeskAIqk/view?usp=sharing">Relatório completo</a>
