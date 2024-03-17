@@ -14,7 +14,7 @@ Este projeto é resultado do trabalho de conclusão da pós graduação em Arqui
 
 - Desenvolver um arquitetura baseada em microserviços
 - Fazer o deploy dos microserviços de forma simples em um cluster kubernetes
-- Permitir que os microserviços possam escalar horizontalmente de acordo com a demanda de processamento 
+- Implementar escalabilitdade nos microserviços de acordo com a demanda de processamento 
 - Implementar observabilidade sobre a infraestrutura e microserviços
 - Disparar eventos no slack quando o sistema ultrapassar determinado valor de processamento
 
